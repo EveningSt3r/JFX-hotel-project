@@ -1,0 +1,16 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <Button fx:id="displayButton" GridPane.columnIndex="0" GridPane.rowIndex="0" text="Display number of guests in hotel"/>
+    <TextField fx:id="enterField" GridPane.columnIndex="0" GridPane.rowIndex="1" text="Enter # of guests checking in" />
+    <Button fx:id="enterButton1" GridPane.columnIndex="1" GridPane.rowIndex="1" text="Enter" onAction="#enterGuests" wrapText="true"/>
+    <TextField fx:id = "checkoutField" GridPane.columnIndex="0" GridPane.rowIndex="2" text="Enter # of guests checking out"/>
+    <Button fx:id="enterButton2" GridPane.columnIndex="1" GridPane.rowIndex="2" text="Enter" onAction="#checkOutGuests"/>
+    <Label fx:id="guestLabel" GridPane.columnIndex="3" GridPane.rowIndex="0" text="Number of guests: 0" />
+    <Label fx:id="zeroLabel" GridPane.columnIndex="0" GridPane.rowIndex="4" text=""/>
+</GridPane>
